@@ -6,10 +6,8 @@ int main(){
 	printf("enter how many numbers you want to add:");
 	scanf("%d",&n);
 	double a[n];
-	double *q;
-	q=&sum;
-	get_add(n,&a[0],q);
-	printf("the sum is %lf\n",*q);
+	get_add(n,&a[0],&sum);
+	printf("the sum is %lf\n",sum);
 }
 
 void get_add(int n,double *p,double *s){
