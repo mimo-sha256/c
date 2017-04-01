@@ -20,7 +20,7 @@ int main(){
 void findroots(float a,float b,float c,complex *r1,complex *r2){
 	float d=b*b-4*a*c;
     	if(d==0){
-    		r1->real=r2->real=(-b/2*a);
+    		r1->real=r2->real=(-b/(2*a));
     		r1->imaginary=r2->imaginary=0;
     	}
 
@@ -31,7 +31,7 @@ void findroots(float a,float b,float c,complex *r1,complex *r2){
    	}
 
 	else if(d<0){
-    		r1->real=r2->real=(-b/2*a);
-		r1->imaginary=r2->imaginary=((sqrt(-d))/2*a);
+    		r1->real=r2->real=(-b/(2*a));
+		r1->imaginary=r2->imaginary=(sqrt(-d))/(2*a);
     	}
 }
