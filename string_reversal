@@ -1,0 +1,21 @@
+#include<stdio.h>
+#include<string.h>
+int main(){
+	char inp[100];
+	
+	printf("enter the number you want to reverse:");
+	gets(inp);
+	
+	int n=strlen(inp)/2;
+	int j=strlen(inp)-1;
+	
+	for(int i=0;i<n;i++){
+		char temp;
+		temp=inp[i];
+		inp[i]=inp[j];
+		inp[j]=temp;
+		j--;
+	}
+	puts(inp);
+	return 0;
+}
