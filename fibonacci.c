@@ -2,6 +2,7 @@
 #include<stdio.h>
 void pfib(int n){
 	int a=0,b=1;
+	printf("fibonacci series is :-\n");
 	printf("0\t1\t");
 	for(int i=3;i<=n;i++){
 		int c=a+b;
